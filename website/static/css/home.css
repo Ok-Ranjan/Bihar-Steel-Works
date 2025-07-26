@@ -3,7 +3,7 @@
 .home-section {
   position: relative;
   height: 90vh;
-  background: url('/static/images/home-bg.jpg') no-repeat center center/cover;
+  background: url('/static/images/business-logo.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
