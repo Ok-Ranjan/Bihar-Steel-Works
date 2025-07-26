@@ -1,0 +1,37 @@
+{% extends "website/base.html" %}
+{% load static %}
+{% block title %}Home - Bihar Steel Works{% endblock %}
+
+{% block content %}
+<section class="home-section" data-aos="fade-in">
+  <div class="home-overlay" >
+    <div class="home-content" data-aos="zoom-in" data-aos-delay="200">
+      <h1 data-aos="fade-up" data-aos-delay="400">
+        Welcome to <span>Bihar Steel Works</span>
+      </h1>
+      <p data-aos="fade-up" data-aos-delay="600">
+        Your trusted partner for premium steel furniture and fabrication in Bihar.
+      </p>
+      <a href="{% url 'products' %}" class="explore-btn" data-aos="fade-up" data-aos-delay="800">Explore Products</a>
+    </div>
+  </div>
+</section>
+
+<section class="features" data-aos="fade-up">
+  <h2 data-aos="zoom-in" data-aos-delay="200">Why Choose Us</h2>
+  <div class="feature-grid">
+    <div class="feature-item" data-aos="fade-right" data-aos-delay="400">
+      <h3>Custom Designs</h3>
+      <p>We build what you imagine — tailored to match your space.</p>
+    </div>
+    <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
+      <h3>Durable & Affordable</h3>
+      <p>Steel furniture at unbeatable prices for both wholesale and retail.</p>
+    </div>
+    <div class="feature-item" data-aos="fade-left" data-aos-delay="800">
+      <h3>Trusted Service</h3>
+      <p>Years of craftsmanship, trust, and quality from the heart of Bihar.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

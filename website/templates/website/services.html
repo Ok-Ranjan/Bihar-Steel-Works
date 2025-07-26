@@ -1,0 +1,33 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}Services - Bihar Steel Works{% endblock %}
+{% block content %}
+<section class="services">
+  <h1>Our Services</h1>
+  <p>We provide top-tier steel fabrication and custom furniture manufacturing services.</p>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <img src="{% static 'images/custom-fabrication.jpg' %}" alt="Custom Fabrication">
+      <h3>Custom Fabrication</h3>
+      <p>Tailored steel designs to meet your space and utility requirements.</p>
+    </div>
+    <div class="service-card">
+      <img src="{% static 'images/installation.jpg' %}" alt="Installation Services">
+      <h3>On-site Installation</h3>
+      <p>We offer delivery and professional installation at your location.</p>
+    </div>
+    <div class="service-card">
+      <img src="{% static 'images/repair.jpg' %}" alt="Repair Services">
+      <h3>Repair & Maintenance</h3>
+      <p>We also provide repair and restoration services for steel items.</p>
+    </div>
+    <div class="service-card">
+      <img src="{% static 'images/wholesale.jpg' %}" alt="Wholesale Supply">
+      <h3>Wholesale Supply</h3>
+      <p>Bulk supply for businesses, schools, hostels, and institutions.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

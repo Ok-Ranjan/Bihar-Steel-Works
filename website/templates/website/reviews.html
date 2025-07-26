@@ -1,0 +1,30 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}Reviews - Bihar Steel Works{% endblock %}
+{% block content %}
+
+<section class="testimonials" id="testimonials">
+  <h2>What Our Customers Say</h2>
+  <div class="testimonial-slider">
+    {% for review in reviews %}
+    <div class="testimonial-card">
+      <img src="{% static 'images/default-user.png' %}" alt="Customer {{ forloop.counter }}">
+      <h3>{{ review.name }}</h3>
+      <p>
+        {% for _ in "12345"|slice:":review.rating"|make_list %}⭐{% endfor %}
+      </p>
+      <p>"{{ review.comment }}"</p>
+    </div>
+    {% empty %}
+    <p>No reviews yet. Be the first to leave one!</p>
+    {% endfor %}
+  </div>
+
+  <div class="review-btn">
+    <a href="{% url 'testimonials' %}" target="_blank">Give Your Review</a>
+  </div>
+</section>
+
+
+{% endblock %}

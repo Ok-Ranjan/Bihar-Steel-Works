@@ -1,0 +1,96 @@
+/* Hero Section */
+.about-hero {
+  background: url('#') no-repeat center center/cover;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+}
+
+.about-overlay h1 {
+  font-size: 2.5rem;
+}
+
+.about-content {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.about-section {
+  margin-bottom: 2rem;
+}
+
+.about-section h2 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.about-section p,
+.about-section ul {
+  font-size: 1rem;
+  color: #555;
+}
+
+.about-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Owner Card */
+.about-owner-card {
+  display: flex;
+  gap: 1rem;
+  background: #f7f7f7;
+  padding: 1.5rem;
+  border-radius: 8px;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.about-owner-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #444;
+}
+
+.owner-details h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.owner-details p {
+  margin: 0.3rem 0;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-hero {
+    height: 40vh;
+  }
+
+  .about-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-owner-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-owner-card img {
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,33 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}Products - Bihar Steel Works{% endblock %}
+{% block content %}
+<section class="products">
+  <h1>Our Products</h1>
+  <p>Explore our range of premium steel furniture and custom-built steel items.</p>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="{% static 'images/almirah.jpg' %}" alt="Steel Almirah">
+      <h3>Steel Almirahs</h3>
+      <p>Durable and spacious, perfect for home and office use.</p>
+    </div>
+    <div class="product-card">
+      <img src="{% static 'images/box.jpg' %}" alt="Steel Box">
+      <h3>Steel Boxes</h3>
+      <p>Secure and sturdy boxes for safe storage.</p>
+    </div>
+    <div class="product-card">
+      <img src="{% static 'images/stair.jpg' %}" alt="Iron Stairs">
+      <h3>Iron Stairs</h3>
+      <p>Custom-made iron stairs designed for strength and style.</p>
+    </div>
+    <div class="product-card">
+      <img src="{% static 'images/charpai.jpg' %}" alt="Steel Charpai">
+      <h3>Steel Charpais</h3>
+      <p>Traditional comfort meets modern durability.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}
